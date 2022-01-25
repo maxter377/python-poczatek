@@ -6,5 +6,3 @@ print("znów commit")
 
 # commit
 
-print("Another commit")
-
