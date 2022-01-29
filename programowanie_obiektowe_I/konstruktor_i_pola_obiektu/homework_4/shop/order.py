@@ -1,12 +1,6 @@
 import random
 
-
-class Product:
-
-    def __init__(self, name, category_name, unit_price):
-        self.name = name
-        self.category_name = category_name
-        self.unit_price = unit_price
+from shop.product import Product, print_product
 
 
 class Order:
@@ -24,26 +18,6 @@ class Order:
         self.total_price = total_price
 
 
-class Apple:
-
-    def __init__(self, species_name, size, price_per_kg):
-        self.species_name = species_name
-        self.size = size
-        self.price_per_kg = price_per_kg
-
-
-class Potato:
-
-    def __init__(self, species_name, size, price_per_kg):
-        self.species_name = species_name
-        self.size = size
-        self.price_per_kg = price_per_kg
-
-
-def print_product(product):
-    print(f"Nazwa: {product.name} | Kategoria: {product.category_name} | Cena: {product.unit_price} /szt")
-
-
 def print_order(order):
     print("=" * 20)
     print(f"Zamówienie złożone przez: {order.client_first_name} {order.client_last_name}")
@@ -54,7 +28,6 @@ def print_order(order):
         print_product(product)
     print("=" * 20)
     print()
-
 
 def generate_order():
     number_of_product = random.randint(1, 10)
@@ -68,16 +41,3 @@ def generate_order():
 
     order = Order(client_first_name="Fernando", client_last_name="Alonso", products=products)
     return order
-
-
-def run_homework():
-    first_order = generate_order()
-    print_order(first_order)
-    second_order = generate_order()
-    print_order(second_order)
-
-
-if __name__ == '__main__':
-    run_homework()
-
-
