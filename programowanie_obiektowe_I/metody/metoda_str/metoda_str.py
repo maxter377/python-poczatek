@@ -41,10 +41,14 @@ def create_school_with_students(school_name):
 
 def run_example():
     school = create_school_with_students("Hogwart")
-    # str_school = str(school)
-    # print(str_school)
-    print(school)
+    str_school = str(school)
+    print(str_school)
+    # print(school)
 
 
 if __name__ == '__main__':
     run_example()
+
+mikolaj = Student("Mikołaj", "Lewy")
+
+print(str(mikolaj))
