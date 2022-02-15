@@ -27,6 +27,10 @@ class Order:
         value_details = (f"O łącznej wartości: {self.total_price} PLN")
         product_details = ("Zamówione produkty::\n")
         for element in self.order_elements:
+            # product_details += "\t"
+            # product_details += str(element)
+            # product_details += "\n"
+            # to samo wyżej w innym zapisie
             product_details += f"\t{element}\n"
         result = "\n".join([mark_line, order_details, value_details, product_details])
         return result
