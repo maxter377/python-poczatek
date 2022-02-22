@@ -7,19 +7,16 @@ class Student:
         self.first_name = first_name
         self.last_name = last_name
         self.promoted = False
-        self.final_grades = []
+        self.__final_grades = []
 
-
+    def __str__(self):
+        return f"Student: {self.first_name} {self.last_name}, promoted: {self.promoted}"
 
     def promote(self):
         self.promoted = True
 
-    # def add_final_grade(self, grade):
-    #     self.final_grades.append(grade)
-    #     if grade == 1:
-    #         self.promoted = False
-
     def add_final_grade(self, grade):
-        self.final_grades.append(Grade(value=grade))
+        self.__final_grades.append(Grade(value=grade))
         if grade == 1:
             self.promoted = False
+
