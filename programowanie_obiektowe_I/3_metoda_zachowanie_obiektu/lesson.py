@@ -23,7 +23,7 @@
 #
 # def run_example():
 #     student = Student(name="Mikołaj")
-#     # wywołanie metody
+#     # wywołanie 4_metody
 #     student.print_something()
 #
 # #     Pierwszy przekazany niejawnie argument zawiera referencję na aktualny

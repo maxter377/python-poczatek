@@ -31,7 +31,7 @@
 #     run_example()
 
 # -------------------------------
-# poniżej mamy przykład gdy nie zaimplementujemy metody bool a spróbujemy ją wywołać
+# poniżej mamy przykład gdy nie zaimplementujemy 4_metody bool a spróbujemy ją wywołać
 
 import random
 
